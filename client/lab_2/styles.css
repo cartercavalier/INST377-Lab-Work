@@ -22,7 +22,7 @@ a:hover {
   color: white;
 }
 
-nav {
+.nav {
   background-color: rgba(0,139, 139,0.4);
   border-radius: 4px;
   padding: 10px;
@@ -31,7 +31,7 @@ nav {
   justify-content: space-around;
 }
 
-nav a {
+.nav a {
   color: rgba(0,139, 139, 1);
 }
 
