@@ -30,15 +30,18 @@
   }
 
   .links {
+    border: 1px solid #fff;
     display: flex;
     justify-content: flex-end;
   }
 
   .data-demo {
+    color: #fff;
     margin-left: auto;
   }
   
   .main-page {
+    color: #fff;
     margin-left: 20px;
   }
 
@@ -68,7 +71,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
   }
 
