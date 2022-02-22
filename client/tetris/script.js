@@ -1,6 +1,8 @@
+/* eslint-disable prefer-const */
+/* eslint-disable no-use-before-define */
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
-  let squares = Array.from(document.querySelectorAll('.grid div'));
+  const squares = Array.from(document.querySelectorAll('.grid div'));
   const ScoreDisplay = document.querySelector('#Score');
   const StartBtn = document.querySelector('#start-button');
   const width = 10;
@@ -52,15 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // draw the Tetromino
   function draw() {
-    current.forEach(index => {
+    current.forEach((index) => {
       squares[currentPosition + index].classList.add('tetromino');
     });
   }
 
   // undraw the Tetromino
   function undraw() {
-    current.forEach(index => {
+    current.forEach((index) => {
       squares[currentPosition + index].classList.remove('tetromino');
     });
+  }
+
+  // make the tetromino move down every second
+  timerId = setInterval(moveDown, 1000);
+
+  // move down the function
+  function moveDown() {
+    undraw();
+    currentPosition += width;
+    draw();
+    freeze();
+  }
+
+  // freeze function
+  function freeze() {
+    if (current.some((index) => squares[currentPosition + index + width].classList.contains('taken'))) {
+      current.forEach((index) => squares[currentPosition + index].classList.add('taken'));
+      // start a new tetromino falling
+      random = Math.floor(Math.random() * theTetrominoes.length);
+      current = theTetrominoes[random][currentRotation];
+      currentPosition = 4;
+      draw();
+    }
   }
 });
