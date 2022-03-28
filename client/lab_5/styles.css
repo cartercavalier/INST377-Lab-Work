@@ -10,18 +10,38 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   background-color: darkslategray;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Page Layout */
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.wrapper {
-  display: flex;
-}
-.container {
-  max-width: 960px;
+.header {
+  text-align: left;
+  background-color: rgb(252, 227, 130);
+  display: block;
+  padding: 15px;
+  border-radius: 4px;
+  
   margin-top: 25px;
+  width: 80%;
+}
+.page_item{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: white;
+  height:fit-content;
+  margin: 20px;
+}
+.form_item{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: white;
+  height:fit-content;
+  margin: 5px;  
 }
