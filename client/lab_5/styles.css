@@ -10,10 +10,8 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   background-color: darkslategray;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* Page Layout */
@@ -23,8 +21,7 @@ body {
   display: block;
   padding: 15px;
   border-radius: 4px;
-  
-  margin-top: 25px;
+  margin: 25px;
   width: 80%;
 }
 .page_item{
@@ -34,14 +31,21 @@ body {
   border-radius: 4px;
   background-color: white;
   height:fit-content;
-  margin: 20px;
+  margin: 25px;
+  width: 20%;
 }
 .form_item{
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
   border-radius: 4px;
   background-color: white;
   height:fit-content;
-  margin: 5px;  
+  margin: 25px;  
+  width: 20%;
+}
+.veg_item{
+  border: none;
+  padding: 3px;
+  margin-top: 10px;
 }
