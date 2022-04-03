@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cavalier Lab 7 - External Libraries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+
+  <body>
+
+    
+      <header class ='header'>
+        <h1>Carter Cavalier's Lab 7 </h1>
+      </header>
+
+      <div class="container">
+        
+          <div class="form_item">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname">
+            <label for="pref">Food Preference</label>
+            <input type="text">
+            <fieldset class='veg_item'>
+              <legend>Veggie or Vegan</legend>
+              <input id='veg_ans_1'
+                     name='veg_ans'
+                     type='radio'
+                     value='Yes' />
+              <label for='veg_ans_1' class='radio-label'>Yes</label>
+              <input id='veg_ans_2'
+                     name='veg_ans'
+                     type='radio'
+                     value='No'
+                     checked />
+              <label for='veg_ans_2' class='radio-label'>No</label>
+            </fieldset>
+            <div class="form-row">
+              <button>submit</button>
+            </div>
+          </div>
+
+          <div class="page_item">
+            <p>There will be something here soon</p>
+          </div>
+        </form>
+
+      </div>
+      <script src="./script.js"></script>
+  </body>
+</html>
